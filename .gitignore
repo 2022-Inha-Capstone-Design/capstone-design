@@ -1,0 +1,12 @@
+#IntelliJ#
+.gradle
+.idea
+build
+
+# vscode #
+.vscode
+frontend/.vscode
+
+# if you have any file in your local 
+# that you do not need for remote repository 
+# please write it in this file.
