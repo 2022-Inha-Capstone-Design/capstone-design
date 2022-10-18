@@ -1,0 +1,6 @@
+[submodule "2022-capstone-design-secret/capstone-design-secret"]
+	path = 2022-capstone-design-secret/capstone-design-secret
+	url = https://github.com/2022-Inha-Capstone-Design/capstone-design-secret.git
+[submodule "capstone-design-secret"]
+	path = capstone-design-secret
+	url = https://github.com/2022-Inha-Capstone-Design/capstone-design-secret.git
