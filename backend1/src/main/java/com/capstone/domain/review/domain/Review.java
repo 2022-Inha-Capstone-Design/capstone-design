@@ -1,5 +1,6 @@
 package com.capstone.domain.review.domain;
 
+import com.capstone.domain.menu.domain.Menu;
 import com.capstone.domain.user.domain.User;
 import com.capstone.global.entity.BaseEntity;
 import lombok.AccessLevel;
@@ -23,4 +24,8 @@ public class Review extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "menu_id")
+    private Menu menu;
 }
