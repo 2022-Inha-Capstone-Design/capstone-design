@@ -20,6 +20,6 @@ public class UserController {
     @PostMapping("/save")
     public ResponseEntity<String> save(@Valid @RequestBody LoginRequest request) {
         userService.save(request);
-        return ResponseEntity.status(CREATED).body("성공적으로 로그인되었습니다.");
+        return ResponseEntity.status(CREATED).body("성공적으로 저장되었습니다.");
     }
 }
