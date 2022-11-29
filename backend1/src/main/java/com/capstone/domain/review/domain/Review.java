@@ -4,6 +4,7 @@ import com.capstone.domain.menu.domain.Menu;
 import com.capstone.domain.user.domain.User;
 import com.capstone.global.entity.BaseEntity;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -28,4 +29,11 @@ public class Review extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "menu_id")
     private Menu menu;
+
+    @Builder
+    public Review(Integer stars, User user, Menu menu) {
+        this.stars = stars;
+        this.user = user;
+        this.menu = menu;
+    }
 }
