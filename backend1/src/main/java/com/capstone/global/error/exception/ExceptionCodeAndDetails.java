@@ -18,10 +18,13 @@ public enum ExceptionCodeAndDetails {
     // 3000: user_ingredient
 
     // 4000: menu
+    NOT_FOUND_MENU(404, "4001", "해당하는 메뉴를 찾을 수 없습니다."),
 
     // 5000: review
 
     // 6000: user
+    NOT_FOUND_USER(404, "6001", "해당하는 사용자를 찾을 수 없습니다.")
+
 
     ;
     private final int status;
