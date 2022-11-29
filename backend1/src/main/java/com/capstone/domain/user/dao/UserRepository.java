@@ -1,4 +1,11 @@
 package com.capstone.domain.user.dao;
 
-public interface UserRepository {
+import com.capstone.domain.user.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+    Optional<User> findByKakaoId(Long id);
 }
